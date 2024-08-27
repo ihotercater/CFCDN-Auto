@@ -16,7 +16,7 @@ headers = {
 
 # 定义五个网址
 urls = [
-    "https://cf.090227.xyz/",
+    "https://api.jiexi.de/cfip/cfip/v2/ip/",
     "https://stock.hostmonit.com/CloudFlareYes",
     "https://ip.164746.xyz/",
     "https://monitor.gacjie.cn/page/cloudflare/ipv4.html",
@@ -46,7 +46,7 @@ def process_site_data(url):
         return []
 
     data = []
-    if "cf.090227.xyz" in url:
+    if "api.jiexi.de" in url:
         rows = soup.find_all('tr')
         for row in rows:
             columns = row.find_all('td')
